@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SyncDoc - Real-Time Collaborative CRDT Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><path d='M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Navigation Bar -->
+  <header class="app-header">
+    <div class="header-left">
+      <a href="/" class="brand" title="SyncDoc Collaborative Editor">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+        </svg>
+        <span>SyncDoc</span>
+      </a>
+
+      <div class="doc-info">
+        <input type="text" id="doc-title" class="doc-title-input" value="Distributed Systems Research Paper" title="Edit Document Title">
+        <div class="doc-meta">
+          <span id="room-badge">Room: <strong id="room-name-display">default-doc</strong></span>
+          <span>&bull;</span>
+          <span id="connection-status" class="status-badge connecting">
+            <span class="status-dot yellow"></span> Connecting...
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <!-- Live Collaborators Presence -->
+      <div class="collaborators-group">
+        <div id="peer-avatars" class="avatar-stack" title="Active collaborators in this room"></div>
+        <span id="peer-count-badge" class="doc-meta">1 active</span>
+      </div>
+
+      <!-- Action Buttons -->
+      <button id="btn-share" class="btn-pill" title="Copy shareable invite link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        Share
+      </button>
+
+      <!-- Hackathon Special: Instant Split-Screen Demo -->
+      <button id="btn-split-sandbox" class="btn-pill primary" title="Open Alice & Bob side-by-side split simulator for judges">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+        Dual Sandbox Demo
+      </button>
+    </div>
+  </header>
+
+  <!-- Google Docs Style Formatting Toolbar -->
+  <div class="toolbar-container">
+    <div class="tool-group">
+      <button id="btn-undo" class="tool-btn" title="Undo (Local User Only)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>
+      </button>
+      <button id="btn-redo" class="tool-btn" title="Redo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 7v6h-6"/><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3L21 13"/></svg>
+      </button>
+    </div>
+
+    <div class="tool-group">
+      <button id="btn-h1" class="tool-btn" title="Heading 1">H1</button>
+      <button id="btn-h2" class="tool-btn" title="Heading 2">H2</button>
+    </div>
+
+    <div class="tool-group">
+      <button id="btn-bold" class="tool-btn" title="Bold (Ctrl+B)"><strong>B</strong></button>
+      <button id="btn-italic" class="tool-btn" title="Italic (Ctrl+I)"><em>I</em></button>
+      <button id="btn-underline" class="tool-btn" title="Underline (Ctrl+U)"><u>U</u></button>
+      <button id="btn-strike" class="tool-btn" title="Strikethrough"><s>S</s></button>
+      <button id="btn-code" class="tool-btn" title="Inline Code">&lt;/&gt;</button>
+      <button id="btn-clear" class="tool-btn" title="Clear Formatting">T&#10005;</button>
+    </div>
+
+    <div class="tool-group">
+      <button id="export-markdown" class="tool-btn" title="Export Markdown (.md)">MD</button>
+      <button id="export-html" class="tool-btn" title="Export HTML">HTML</button>
+      <button id="export-txt" class="tool-btn" title="Export Text (.txt)">TXT</button>
+      <button id="export-print" class="tool-btn" title="Print / PDF">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Workspace: Main Canvas + Dual Sandbox + Mentor Panel -->
+  <main class="workspace-container">
+    
+    <!-- Main Client Editor Workspace -->
+    <div id="main-workspace" class="main-workspace">
+      <div class="editor-scroll-area">
+        <div class="document-paper">
+          <!-- Floating Remote Cursors and Presence Tags -->
+          <div id="remote-cursors-layer" class="remote-cursors-layer"></div>
+
+          <!-- Rich Text ContentEditable Canvas -->
+          <div id="editor" class="editor-content" contenteditable="true" spellcheck="false" placeholder="Start typing collaboratively..."></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side-by-side Dual Sandbox Container (For Hackathon Judges) -->
+    <div id="split-sandbox-container" class="split-sandbox-container"></div>
+
+    <!-- Mentor Evaluation & Chaos Testing Panel -->
+    <aside class="mentor-panel">
+      <div class="mentor-header">
+        <div class="mentor-title">
+          <span>Mentor Evaluation Suite</span>
+          <span class="mentor-tag">Hackathon Track 3</span>
+        </div>
+      </div>
+
+      <!-- Network Partition & Chaos Simulator -->
+      <section class="mentor-section">
+        <span class="section-label">1. Network Partition Simulator</span>
+        <div class="chaos-controls">
+          <button id="chaos-toggle-online" class="btn-chaos-offline">
+            Simulate Partition (Go Offline)
+          </button>
+
+          <div class="control-row">
+            <label for="chaos-latency-select">Injected Latency:</label>
+            <select id="chaos-latency-select" class="control-select">
+              <option value="0">0 ms (Real-time LAN)</option>
+              <option value="150">150 ms (Global CDN)</option>
+              <option value="500">500 ms (High Latency)</option>
+              <option value="1500">1500 ms (Extreme Satellite)</option>
+            </select>
+          </div>
+
+          <div class="control-row">
+            <label for="chaos-drop-slider">Simulated Packet Drop:</label>
+            <span id="chaos-drop-value" style="font-weight: 700;">0%</span>
+          </div>
+          <input type="range" id="chaos-drop-slider" min="0" max="0.5" step="0.05" value="0">
+        </div>
+      </section>
+
+      <!-- Real-Time CRDT Diagnostics -->
+      <section class="mentor-section">
+        <span class="section-label">2. CRDT Diagnostics & Memory</span>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-name">Visible / Total Items</div>
+            <div id="hud-items" class="metric-value">0 / 0</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-name">Tombstones (Deletes)</div>
+            <div id="hud-tombstones" class="metric-value">0 (0.0%)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-name">Memory Footprint</div>
+            <div id="hud-memory" class="metric-value">0 KB</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-name">Latency (RTT)</div>
+            <div id="hud-latency" class="metric-value">0 ms</div>
+          </div>
+          <div class="metric-card" style="grid-column: span 2;">
+            <div class="metric-name">Buffered Offline Operations</div>
+            <div id="hud-pending" class="metric-value">0 ops</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vector Clock Visualization -->
+      <section class="mentor-section">
+        <span class="section-label">3. State Vector Clocks</span>
+        <div id="hud-vector-clock" class="code-box">{}</div>
+      </section>
+
+      <!-- Automated Headless Fuzz Benchmark -->
+      <section class="mentor-section">
+        <span class="section-label">4. Automated Convergence Fuzzer</span>
+        <button id="btn-run-benchmark" class="btn-benchmark">
+          Run Convergence Fuzz Test (100 Ops)
+        </button>
+        <div id="benchmark-result"></div>
+      </section>
+    </aside>
+
+  </main>
+
+  <!-- Bottom App Status Footer -->
+  <footer class="app-footer">
+    <div class="footer-stats">
+      <span id="word-count">0 words</span>
+      <span>&bull;</span>
+      <span id="char-count">0 chars</span>
+      <span>&bull;</span>
+      <span id="reading-time">1 min read</span>
+    </div>
+    <div>
+      <span>CRDT Core: <strong>RGA + Vector Clock</strong></span>
+      <span>&bull;</span>
+      <span>Persistence: <strong>IndexedDB (Offline-First)</strong></span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="js/crdt-core.js"></script>
+  <script type="module" src="js/awareness.js"></script>
+  <script type="module" src="js/persistence.js"></script>
+  <script type="module" src="js/chaos-mentor.js"></script>
+  <script type="module" src="js/editor.js"></script>
+</body>
+</html>

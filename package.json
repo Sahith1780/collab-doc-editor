@@ -1,0 +1,27 @@
+{
+  "name": "collab-doc-editor",
+  "version": "1.0.0",
+  "description": "Real-Time Collaborative Rich Text Editor using Conflict-Free Replicated Data Types (CRDTs), Live Presence, and Offline-First Resilience",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "node test/convergence.test.js",
+    "test:convergence": "node test/convergence.test.js",
+    "benchmark": "node test/memory-benchmark.js"
+  },
+  "keywords": [
+    "crdt",
+    "collaborative-editor",
+    "yjs",
+    "distributed-systems",
+    "real-time",
+    "websockets",
+    "google-docs",
+    "offline-first",
+    "hackathon"
+  ],
+  "author": "Antigravity & Pair Programmer",
+  "license": "MIT"
+}

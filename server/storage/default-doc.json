@@ -1,11 +1,12 @@
 {
   "name": "default-doc",
-  "savedAt": 1789652428211,
+  "savedAt": 1789661538718,
   "snapshot": {
     "vectorClock": {
       "server_default-doc": 0,
       "peer_a97nk2g": 593,
-      "twin_peer": 100
+      "twin_peer": 100,
+      "peer_j9mapce": 100
     },
     "items": [
       {
@@ -47,6 +48,23 @@
           "clock": 2
         },
         "content": "t",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 12
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 495
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 2
+        },
+        "content": "i",
         "deleted": false,
         "attributes": {}
       },
@@ -128,6 +146,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 54
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 570
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 5
+        },
+        "content": "1",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 5
         },
@@ -154,6 +189,23 @@
           "clock": 6
         },
         "content": "G",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 27
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 99
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 6
+        },
+        "content": "T",
         "deleted": false,
         "attributes": {}
       },
@@ -246,6 +298,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 70
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 10
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 11
+        },
+        "content": "J",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 11
         },
@@ -308,6 +377,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 45
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 498
+        },
+        "originRight": {
+          "client": "peer_j9mapce",
+          "clock": 25
+        },
+        "content": "w",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 25
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 498
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 13
+        },
+        "content": "x",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 13
         },
@@ -345,6 +448,40 @@
         },
         "originRight": null,
         "content": "y",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 98
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 15
+        },
+        "originRight": {
+          "client": "peer_j9mapce",
+          "clock": 56
+        },
+        "content": "u",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 56
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 15
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 16
+        },
+        "content": "Z",
         "deleted": false,
         "attributes": {}
       },
@@ -477,6 +614,23 @@
           "clock": 23
         },
         "content": "M",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 84
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 556
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 95
+        },
+        "content": "G",
         "deleted": false,
         "attributes": {}
       },
@@ -701,6 +855,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 100
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 34
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 35
+        },
+        "content": "3",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 35
         },
@@ -765,6 +936,23 @@
           "clock": 38
         },
         "originRight": null,
+        "content": "t",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 97
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 39
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 40
+        },
         "content": "t",
         "deleted": false,
         "attributes": {}
@@ -869,6 +1057,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 74
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 46
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 47
+        },
+        "content": "E",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 47
         },
@@ -965,6 +1170,23 @@
           "clock": 53
         },
         "content": "i",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 22
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 541
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 53
+        },
+        "content": "w",
         "deleted": false,
         "attributes": {}
       },
@@ -1257,6 +1479,23 @@
           "clock": 69
         },
         "content": "t",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 79
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 68
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 580
+        },
+        "content": "a",
         "deleted": false,
         "attributes": {}
       },
@@ -1630,6 +1869,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 53
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 589
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 88
+        },
+        "content": "l",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 88
         },
@@ -1656,6 +1912,23 @@
           "clock": 528
         },
         "content": "h",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 32
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 590
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 528
+        },
+        "content": "1",
         "deleted": false,
         "attributes": {}
       },
@@ -1777,6 +2050,40 @@
           "clock": 94
         },
         "content": "v",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 58
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 496
+        },
+        "originRight": {
+          "client": "peer_j9mapce",
+          "clock": 52
+        },
+        "content": "N",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 52
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 496
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 94
+        },
+        "content": "3",
         "deleted": false,
         "attributes": {}
       },
@@ -2111,6 +2418,23 @@
           "clock": 113
         },
         "content": "5",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 90
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 544
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 113
+        },
+        "content": "V",
         "deleted": false,
         "attributes": {}
       },
@@ -2672,6 +2996,23 @@
           "clock": 147
         },
         "content": "2",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 60
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 537
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 588
+        },
+        "content": "1",
         "deleted": false,
         "attributes": {}
       },
@@ -4069,6 +4410,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 46
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 506
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 227
+        },
+        "content": "1",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 227
         },
@@ -4140,6 +4498,23 @@
           "clock": 230
         },
         "content": "F",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 85
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 503
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 230
+        },
+        "content": "1",
         "deleted": false,
         "attributes": {}
       },
@@ -4460,6 +4835,23 @@
           "clock": 248
         },
         "content": "9",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 38
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 550
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 248
+        },
+        "content": "p",
         "deleted": false,
         "attributes": {}
       },
@@ -5144,6 +5536,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 29
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 540
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 288
+        },
+        "content": "s",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 288
         },
@@ -5226,6 +5635,23 @@
           "clock": 293
         },
         "content": " ",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 6
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 566
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 293
+        },
+        "content": "j",
         "deleted": false,
         "attributes": {}
       },
@@ -5515,6 +5941,23 @@
           "clock": 310
         },
         "content": "A",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 13
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 504
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 310
+        },
+        "content": "a",
         "deleted": false,
         "attributes": {}
       },
@@ -7055,6 +7498,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 91
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 526
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 497
+        },
+        "content": "i",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 497
         },
@@ -7445,6 +7905,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 83
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 562
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 422
+        },
+        "content": "F",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "peer_a97nk2g",
           "clock": 422
         },
@@ -7746,6 +8223,23 @@
           "clock": 439
         },
         "content": "U",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 20
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 551
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 439
+        },
+        "content": "j",
         "deleted": false,
         "attributes": {}
       },
@@ -8742,6 +9236,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 8
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 491
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 557
+        },
+        "content": "p",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 74
         },
@@ -8759,6 +9270,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 93
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 74
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 82
+        },
+        "content": "N",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 82
         },
@@ -8771,6 +9299,23 @@
           "clock": 480
         },
         "content": "w",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 73
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 479
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 574
+        },
+        "content": "t",
         "deleted": false,
         "attributes": {}
       },
@@ -8805,6 +9350,23 @@
           "clock": 476
         },
         "content": "t",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 69
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 469
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 470
+        },
+        "content": "C",
         "deleted": false,
         "attributes": {}
       },
@@ -8856,6 +9418,23 @@
           "clock": 440
         },
         "content": "X",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 11
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 26
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 46
+        },
+        "content": "w",
         "deleted": false,
         "attributes": {}
       },
@@ -8946,6 +9525,91 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 34
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 52
+        },
+        "originRight": {
+          "client": "peer_j9mapce",
+          "clock": 33
+        },
+        "content": "1",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 59
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 425
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 426
+        },
+        "content": "j",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 64
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 423
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 424
+        },
+        "content": "O",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 33
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 421
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 562
+        },
+        "content": "v",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 7
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 418
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 419
+        },
+        "content": "S",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 49
         },
@@ -8980,6 +9644,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 82
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 408
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 409
+        },
+        "content": "r",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 54
         },
@@ -8992,6 +9673,23 @@
           "clock": 401
         },
         "content": "U",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 18
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 400
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 401
+        },
+        "content": "J",
         "deleted": false,
         "attributes": {}
       },
@@ -9201,6 +9899,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 15
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 360
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 361
+        },
+        "content": "r",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 95
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 359
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 360
+        },
+        "content": "P",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 9
         },
@@ -9213,6 +9945,40 @@
           "clock": 360
         },
         "content": "Z",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 57
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 344
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 536
+        },
+        "content": "k",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 44
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 343
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 344
+        },
+        "content": "E",
         "deleted": false,
         "attributes": {}
       },
@@ -9235,6 +10001,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 5
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 337
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 568
+        },
+        "content": "p",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 31
         },
@@ -9247,6 +10030,23 @@
           "clock": 337
         },
         "content": "R",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 61
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 31
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 93
+        },
+        "content": " ",
         "deleted": false,
         "attributes": {}
       },
@@ -9354,6 +10154,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 37
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 309
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 504
+        },
+        "content": "3",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 16
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 309
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 504
+        },
+        "content": "W",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 18
         },
@@ -9388,6 +10222,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 1
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 303
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 304
+        },
+        "content": "T",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 4
         },
@@ -9400,6 +10251,23 @@
           "clock": 299
         },
         "content": "N",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 87
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 297
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 298
+        },
+        "content": "Q",
         "deleted": false,
         "attributes": {}
       },
@@ -9456,6 +10324,57 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 17
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 283
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 284
+        },
+        "content": "N",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 43
+        },
+        "originLeft": {
+          "client": "peer_j9mapce",
+          "clock": 17
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 60
+        },
+        "content": "3",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 96
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 281
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 282
+        },
+        "content": "E",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 60
         },
@@ -9507,6 +10426,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 4
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 81
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 86
+        },
+        "content": "7",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 86
         },
@@ -9519,6 +10455,23 @@
           "clock": 264
         },
         "content": "5",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 66
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 262
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 263
+        },
+        "content": "j",
         "deleted": false,
         "attributes": {}
       },
@@ -9570,6 +10523,23 @@
           "clock": 258
         },
         "content": "4",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 10
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 256
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 257
+        },
+        "content": "9",
         "deleted": false,
         "attributes": {}
       },
@@ -9643,6 +10613,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 3
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 97
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 10
+        },
+        "content": "N",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 10
         },
@@ -9655,6 +10642,57 @@
           "clock": 244
         },
         "content": "9",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 41
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 242
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 243
+        },
+        "content": "6",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 21
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 235
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 236
+        },
+        "content": "6",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 78
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 231
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 232
+        },
+        "content": "K",
         "deleted": false,
         "attributes": {}
       },
@@ -9677,6 +10715,57 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 35
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 12
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 73
+        },
+        "content": "9",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 75
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 224
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 225
+        },
+        "content": "2",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 99
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 222
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 223
+        },
+        "content": "f",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 73
         },
@@ -9689,6 +10778,40 @@
           "clock": 221
         },
         "content": "n",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 39
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 73
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 83
+        },
+        "content": "Y",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 67
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 218
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 505
+        },
+        "content": "v",
         "deleted": false,
         "attributes": {}
       },
@@ -9711,6 +10834,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 72
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 209
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 210
+        },
+        "content": "V",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 69
         },
@@ -9723,6 +10863,40 @@
           "clock": 206
         },
         "content": "Q",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 47
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 203
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 204
+        },
+        "content": "2",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 77
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 198
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 199
+        },
+        "content": "2",
         "deleted": false,
         "attributes": {}
       },
@@ -9745,6 +10919,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 81
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 32
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 77
+        },
+        "content": "V",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 77
         },
@@ -9757,6 +10948,40 @@
           "clock": 8
         },
         "content": "o",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 63
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 191
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 192
+        },
+        "content": "i",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 89
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 190
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 191
+        },
+        "content": "P",
         "deleted": false,
         "attributes": {}
       },
@@ -9779,6 +11004,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 42
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 184
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 592
+        },
+        "content": "A",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 71
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 182
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 183
+        },
+        "content": "T",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 68
         },
@@ -9791,6 +11050,40 @@
           "clock": 183
         },
         "content": "t",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 19
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 178
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 179
+        },
+        "content": "U",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 28
+        },
+        "originLeft": {
+          "client": "peer_j9mapce",
+          "clock": 19
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 17
+        },
+        "content": "k",
         "deleted": false,
         "attributes": {}
       },
@@ -9825,6 +11118,40 @@
           "clock": 179
         },
         "content": "d",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 48
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 174
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 561
+        },
+        "content": "d",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 23
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 173
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 174
+        },
+        "content": "9",
         "deleted": false,
         "attributes": {}
       },
@@ -9983,6 +11310,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 51
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 66
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 91
+        },
+        "content": "O",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 91
         },
@@ -10082,6 +11426,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 24
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 70
+        },
+        "originRight": {
+          "client": "peer_j9mapce",
+          "clock": 9
+        },
+        "content": "p",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 9
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 132
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 133
+        },
+        "content": "m",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 98
         },
@@ -10099,6 +11477,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 36
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 98
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 21
+        },
+        "content": "U",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 94
+        },
+        "originLeft": {
+          "client": "peer_j9mapce",
+          "clock": 36
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 21
+        },
+        "content": "z",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 21
         },
@@ -10111,6 +11523,23 @@
           "clock": 128
         },
         "content": "F",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 92
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 21
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 56
+        },
+        "content": "k",
         "deleted": false,
         "attributes": {}
       },
@@ -10150,6 +11579,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 2
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 114
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 115
+        },
+        "content": "q",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 49
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 110
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 111
+        },
+        "content": "H",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 55
         },
@@ -10162,6 +11625,57 @@
           "clock": 109
         },
         "content": "E",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 65
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 101
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 102
+        },
+        "content": "C",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 68
+        },
+        "originLeft": {
+          "client": "peer_j9mapce",
+          "clock": 65
+        },
+        "originRight": {
+          "client": "peer_j9mapce",
+          "clock": 62
+        },
+        "content": "4",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 62
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 101
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 102
+        },
+        "content": "W",
         "deleted": false,
         "attributes": {}
       },
@@ -10184,6 +11698,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 76
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 100
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 558
+        },
+        "content": "I",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 80
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 99
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 100
+        },
+        "content": "A",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 80
         },
@@ -10196,6 +11744,40 @@
           "clock": 98
         },
         "content": "o",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 50
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 96
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 546
+        },
+        "content": "H",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 86
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 95
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 96
+        },
+        "content": "P",
         "deleted": false,
         "attributes": {}
       },
@@ -10252,6 +11834,23 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 31
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 86
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 87
+        },
+        "content": "t",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 22
         },
@@ -10264,6 +11863,23 @@
           "clock": 86
         },
         "content": "f",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 88
+        },
+        "originLeft": {
+          "client": "twin_peer",
+          "clock": 22
+        },
+        "originRight": {
+          "client": "twin_peer",
+          "clock": 29
+        },
+        "content": "c",
         "deleted": false,
         "attributes": {}
       },
@@ -10286,6 +11902,40 @@
       },
       {
         "id": {
+          "client": "peer_j9mapce",
+          "clock": 26
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 66
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 67
+        },
+        "content": "C",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 55
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 64
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 65
+        },
+        "content": "o",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
           "client": "twin_peer",
           "clock": 24
         },
@@ -10298,6 +11948,57 @@
           "clock": 53
         },
         "content": "l",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 40
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 40
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 41
+        },
+        "content": "F",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 30
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 40
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 41
+        },
+        "content": "9",
+        "deleted": false,
+        "attributes": {}
+      },
+      {
+        "id": {
+          "client": "peer_j9mapce",
+          "clock": 14
+        },
+        "originLeft": {
+          "client": "peer_a97nk2g",
+          "clock": 24
+        },
+        "originRight": {
+          "client": "peer_a97nk2g",
+          "clock": 25
+        },
+        "content": "2",
         "deleted": false,
         "attributes": {}
       }
